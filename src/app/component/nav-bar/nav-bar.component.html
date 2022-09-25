@@ -1,0 +1,33 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-light  "  style="background-color: #e3f2fd; height: 20%;">
+        <div ><a href="#" class="navbar-brand" style="color: brown;font-style: italic; ">
+          <strong><marquee> <h2 style="color: red">Jagdamb Finance</h2></marquee> </strong>
+        </a></div>
+
+        <ul class="navbar-nav">
+            <li><a  routerLink="/home" class="nav-link" ><strong><h5>Home</h5></strong></a></li>
+            <!-- <li><a routerLink="/aboutus" class="nav-link" >About us</a></li> -->
+            <li><a routerLink="/processtoapply" class="nav-link"><strong><h5>Process To Apply</h5></strong></a></li>
+            <li><a routerLink="/emicalculator" class="nav-link" ><strong><h5>EMI Calculator</h5></strong></a></li> &nbsp;
+            <li><a routerLink="/offers" class="nav-link" ><strong><h5>What we Offers</h5></strong></a></li> 
+            <!-- <li>
+                <h5><a href="https://emicalculator.net"> EMI Calculator</a>
+                </h5>
+            </li> -->
+           <!--  -->
+        </ul>
+
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+                <li><a routerLink="/login" class="nav-link" *ngIf="!(hardCodedAuthenticationService.isUserLoggedIn())">  <strong><h5>Login</h5></strong>  </a></li>
+                <li><a  routerLink="/logout" class="nav-link" *ngIf="hardCodedAuthenticationService.isUserLoggedIn()"><strong><h5>Logout</h5></strong></a></li>
+        </ul>
+
+        <!-- <ul class="navbar-nav navbar-collapse justify-content-end">
+             <li><samp class="nav-link" *ngIf="hardCodedAuthenticationService.isUserLoggedIn()">{{hardCodedAuthenticationService.name}}</samp></li> 
+                 <li><a routerLink="/login" class="nav-link">Login</a></li>
+                <li><a  routerLink="/logout" class="nav-link" >Logout</a></li>
+        </ul> -->
+    </nav>
+</header>
+
+

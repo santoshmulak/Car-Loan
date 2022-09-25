@@ -1,0 +1,33 @@
+<table class="table table-success table-striped" border="1">
+    <thead>
+      <tr class="bg-info"> 
+        <th scope="col" >Id</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Email</th>
+        <th scope="col">Adhar Number</th>
+        <th scope="col">PanCard</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Loan Amount</th>
+        <th scope="col">ROI</th>
+        <th scope="col">Tenure Of Loan</th>
+       
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let application of applications">
+          <td>{{application.customerId}}</td>
+          <td>{{application.firstName}}</td>
+          <td>{{application.lastName}}</td>
+          <td>{{application.email}}</td>
+          <td>{{application.adharCardNumber}}</td>
+          <td>{{application.panNumber}}</td>
+          <td>{{application.mobileNumber}}</td>
+          <td>{{application.loan.loanrequaired}}</td>
+          <td>{{application.loan.annualIntreset}}</td>
+          <td>{{application.loan.tenureOfLoan}}</td>
+         
+      </tr>
+    </tbody>
+  </table>
+

@@ -1,0 +1,32 @@
+<table class="table" border="1">
+    <tr class="bg-info"> 
+        <th scope="col">Employee Id</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col"> Email Id</th>
+        <th scope="col"> Mobile Number</th>
+        <th scope="col"> Role</th>
+        <th scope="col"> Date</th>
+        <th scope="col"> Username</th>
+        <th scope="col"> Password</th>
+        <th scope="col"> Action</th>
+    </tr>
+    <tr class="table-info" *ngFor="let emp1 of emplist">
+        <td scope="row" class="bg-warning">{{emp1.employeeId}}</td>
+        <td class="bg-warning">{{emp1.firstName}}</td>
+        <td class="bg-warning">{{emp1.lastName}}</td>
+        <td class="bg-warning">{{emp1.emailId}}</td>
+        <td class="bg-warning">{{emp1.mobileNumber}}</td>
+        <td class="bg-warning">{{emp1.role}}</td>
+        <td class="bg-warning">{{emp1.date}}</td>
+        <td class="bg-warning">{{emp1.username}}</td>
+        <td class="bg-warning">{{emp1.password}}</td>
+        <td >
+
+            <button type="button" class="btn btn-warning" (click)="deleteemployee(emp1.employeeId)">Delete</button>
+          
+        </td>
+    </tr>
+
+</table>
+<router-outlet></router-outlet>

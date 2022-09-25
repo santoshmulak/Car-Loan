@@ -1,0 +1,493 @@
+<div class="main-content page-m" style="background-color:antiquewhite;">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+
+
+            <form [formGroup]="regform" (ngSubmit)="onSubmit()">
+                <div class="form-area">
+
+                    <h3>Customer Registraton</h3>
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>First Name</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="firstName" type="text">
+
+                           
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Last Name</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="lastName" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Email</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="email" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Date of birth</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="dob" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Gender</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="gender" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Age</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="age" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Mobile Number</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="mobileNumber" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Nationality</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="nationality" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Adhar Number</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="adharCardNumber" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Pan Number</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="panNumber" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Education</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="education" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Present Employer</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="presentEmployer" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-2"> <label>Occupation</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="occupation" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-area-1">
+
+                        <input type="button" class="btn btn-success" style="padding: 5px;" (click)="hode()"
+                            value="Address">&nbsp;
+                        <input type="button" class="btn btn-success" style="padding: 5px;" (click)="hode1()"
+                            value="Bank Details">&nbsp;
+                        <input type="button" class="btn btn-success" style="padding: 5px;" (click)="hode3()"
+                            value="Loan Details">&nbsp;
+                        <input type="button" class="btn btn-success" style="padding: 5px;" (click)="hode4()"
+                            value="Car Details">&nbsp;
+                        <input type="button" class="btn btn-success" style="padding: 5px;" (click)="hode5()"
+                            value="Upload Document">
+                    </div>
+                    <form *ngIf="hodev" formGroupName="currentAddress">
+                        <div class="form-area">
+
+
+                            <h3>Current Address</h3>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Area Name</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input type="text" formControlName="areaName">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>City Name</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="cityName" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>District Name</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="district" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>State Name</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="stateName" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Pin code</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="pincode" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="input-space">
+                            <label class="au-checkbox">
+                                <input type="checkbox" (change)="copyCurrentAddressToPermanentAddress($event)">
+                                <span class="au-checkmark"></span>Current Address same as Permanent Address
+                            </label>
+                        </div>
+                    </form>
+                    <form *ngIf="hodev" formGroupName="permanantAddress">
+                        <div class="form-area">
+
+                            <h3 class="btn btn-success btn-circle btn-xl">Permanent Address</h3>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Area Name</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input type="text" formControlName="areaName">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>City Name</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="cityName" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>District Name</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="district" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>State Name</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="stateName" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Pin code</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="pincode" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!-- <div class="form-area-1">
+                        <input type="button" class="btn btn-success" style="padding: 5px;" (click)="hode1()"
+                            value="Bank Details">
+
+                    </div> -->
+                    <form *ngIf="hodev1" formGroupName="bank">
+                        <div class="form-area">
+                            <h3 class="btn btn-success btn-circle btn-xl">Bank Details</h3>
+                            <div class="row">
+                                <div class="col-md-2"> <label>Bank Name</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="bankName" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2"> <label>Account Number</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="cAccountNo" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>IFSC Code Number</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="ifsccode" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>IFSC Code Number</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="ifsccode" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-2"> <label> Micr Code</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="micrCode" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Branch Address</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="branchAddress" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!-- loan -->
+                    <!-- <div class="form-area-1">
+                        <input type="button" class="btn btn-success" style="padding: 5px;" (click)="hode3()"
+                            value="Loan Details">
+
+                    </div> -->
+                    <form *ngIf="hodev3" formGroupName="loan">
+                        <div class="form-area">
+                            <h3 class="btn btn-success btn-circle btn-xl">Loan Details</h3>
+                            <div class="row">
+                                <div class="col-md-2"> <label>Loan Amount </label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="loanrequaired" type="number">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>ROF</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="annualIntreset" type="number">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Tenure of Loan</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="tenureOfLoan" type="number">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <!-- <div class="form-area-1">
+                        <input type="button" class="btn btn-success" style="padding: 5px;" (click)="hode4()"
+                            value="Car Details">
+                    </div> -->
+
+                    <form *ngIf="hodev4" formGroupName="vehicle">
+                        <div class="form-area">
+                            <h3 class="btn btn-success btn-circle btn-xl">Car Details</h3>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Vehical Details</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="vehicleName" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Vehical Price </label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="vehiclePrice" type="number">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Model Number</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input formControlName="vehicleModelNumber" type="number">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </form>
+
+
+
+
+
+                    <!-- <div class="form-area-1">
+                        <input type="button" class="btn btn-success" style="padding: 5px;" (click)="hode5()"
+                            value="Upload Document">
+                    </div> -->
+
+                    <form *ngIf="hodev5">
+                        <div class="form-area">
+                            <h3 class="btn btn-success btn-circle btn-xl">Upload Documents</h3>
+
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Adhar Card</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input type="file" (change)="onselectedFile1($event)">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Bank Details</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input type="file" (change)="onselectedFile2($event)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Pan Card</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input type="file" (change)="onselectedFile3($event)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Photo</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input type="file" (change)="onselectedFile4($event)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Salary Slip</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input type="file" (change)="onselectedFile5($event)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"> <label>Sign/Thumb</label></div>
+                                <div class="col-md-9">
+                                    <div class="input-space">
+                                        <input type="file" (change)="onselectedFile6($event)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                
+              <div class="text-center">
+                <button type="submit" class="registerbtn" style="background-color: aqua;" >Register</button> 
+              </div>
+            </form>
+        </div>
+    </div>
+</div>

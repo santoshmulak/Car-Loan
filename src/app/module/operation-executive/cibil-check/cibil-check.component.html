@@ -1,0 +1,39 @@
+
+<table class="table table-success table-striped" border="1">
+    <tbody>
+      <tr  class="bg-info">
+        <th scope="col">Id</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Pancard</th>
+        <th scope="col">AdharCard</th>
+        <th scope="col">Cibil Score</th>
+        <th scope="col">Cibil Check</th>
+        <th scope="col">Status</th>
+     </tr>
+    </tbody>
+    <tbody>
+      
+      <tr *ngFor="let application of applications ">
+        
+        <td>{{application.customerId}}</td>
+        <td>{{application.firstName}}</td>
+        <td>{{application.lastName}}</td>
+        <td>{{application.email}}</td>
+        <td>{{application.mobileNumber}}</td>
+        <td>{{application.panNumber}}</td>
+        <td>{{application.adharCardNumber}}</td>
+        <td>{{application.cibilScore}}</td>
+        <td>
+            <button type="button" class="btn btn-success" (click)="checkScore(application)">Check</button>
+        </td>
+        <td>{{application.loanStatus}}</td>
+        
+       <td>
+       </td>
+    </tr>
+    </tbody>
+  </table>
+

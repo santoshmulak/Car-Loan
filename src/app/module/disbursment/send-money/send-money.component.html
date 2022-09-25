@@ -1,0 +1,89 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="row ">
+        <div class="col">
+            <div class="card ">
+
+                <div class="col-xl-12">
+                    <div class="card-body p-md-4 text-black">
+                        <h3 class="mb-5 text-uppercase">Dealer registration form</h3>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="form-outline">
+                                    <input type="text" formControlName="firstName" required id="form3Example1m"
+                                        class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example1m">First name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="form-outline">
+                                    <input type="text" formControlName="lastName" required id="form3Example1n"
+                                        class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example1n">Last name</label>
+                                </div>
+                            </div>
+
+
+                                <div class="col-md-4 mb-4">
+                                    <input type="text" formControlName="emailId" required id="form3Example8"
+                                        class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example8">Email Id</label>
+                                </div>
+                       
+                           
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="form-outline">
+                                    <input type="text" formControlName="bankName" required id="form3Example1m1"
+                                        class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example1m1">Bank Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="form-outline">
+                                    <input type="text" formControlName="ifscCode" required id="form3Example1n1"
+                                        class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example1n1">IFSC Code</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-4 mb-4">
+                                <div class="form-outline">
+                                    <input type="text" formControlName="showroomName" required id="form3Example1n"
+                                        class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example1n">Showroom Name</label>
+                                </div>
+                            </div>
+                           
+
+
+
+                            <div class="col-md-4 mb-4">
+                                <input type="text" formControlName="Amount" required id="form3Example8"
+                                    class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Example8">Amount</label>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <input type="text" formControlName="accountNumber" required id="form3Example8"
+                                    class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Example8">Account Number</label>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end ">
+                            <button type="reset" value="Reset all" class="btn btn-warning btn-lg ms-2">Reset </button>
+                            &nbsp;
+                            <button type="submit" class="btn btn-warning btn-lg ms-2"
+                                [disabled]="!registerForm.valid">Send Money</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

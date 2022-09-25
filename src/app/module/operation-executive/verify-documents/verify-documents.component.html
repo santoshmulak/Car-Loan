@@ -1,0 +1,44 @@
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead class=" text-primary">
+                
+                    <tr>
+                     <th>Id</th>
+                     <!-- <Th>First Name</Th> -->
+                     <th>Aadhar</th>
+                     <th>Passport</th>
+                     <Th>Salary-Slip</Th>
+                     <th>Signature</th>
+                      <th>Bank_Details</th>
+                     <th>PanCard</th>
+                     <th>Approve</th> 
+                     <th>Reject</th> 
+                    </tr>
+              </thead>
+                <tbody>            
+                    <tr *ngFor="let document of verifyDocument">
+                        <td>{{document.document.id}}</td>
+                        <!-- <td>{{document.firstName}}</td> -->
+                        <td><img [src]="'data:image/jpeg;base64,'+document.document.adharCard" height="150"></td> 
+                        <td><img [src]="'data:image/jpeg;base64,'+document.document.passport" height="150"></td>
+                        <td><img [src]="'data:image/jpeg;base64,'+document.document.salarySlip" height="150"></td>
+                        <td> <img [src]="'data:image/jpeg;base64,'+document.document.sign" height="150"></td>
+                        <td> <img [src]="'data:image/jpeg;base64,'+document.document.bankDetails" height="150"></td>
+                        <td><img [src]="'data:image/jpeg;base64,'+document.document.panCard" height="150"></td>
+                       
+                      <td>
+                         <button (click)="acceptDocument(document)"class="btn btn-success">Approved</button>
+                      </td> 
+                      <td>
+                        <button (click)="rejectDocument(document)"class="btn btn-danger">Rejected</button>
+                     </td>
+                       
+                
+                    </tr>
+              </tbody>
+            </table>
+          </div>
+  
+
+

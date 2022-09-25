@@ -1,0 +1,42 @@
+.container-fluid
+{
+    /* border: 2px solid black; */
+  background-color:rgb(247, 247, 247);
+    height: 632px;
+    margin-top: 0px;
+}
+.col-2
+{
+    /* border: 2px solid black;  */
+    background-color: rgb(255, 255, 255);
+    height:632px ;
+    
+}
+.sidebar ul li
+{
+    margin-top: 20px;
+    list-style: none;
+    
+}
+/* .sidebar ul li a
+{
+    margin-left: 20px;
+    list-style: none;
+    text-decoration: none;
+    color:rgba(127, 140, 141,1.0);
+    padding: 10px;
+    margin: 6px;
+    
+}
+.sidebar ul li a:hover{
+    background-color: orange;
+    border-radius: 5px 5px 5px 5px;
+} */
+/* .card
+{
+    margin-top: 100px;
+} */
+.sidebar
+{
+    margin-top: 90px;
+}

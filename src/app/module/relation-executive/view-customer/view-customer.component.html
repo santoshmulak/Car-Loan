@@ -1,0 +1,42 @@
+
+
+<table class="table table-success table-striped" border="1">
+    
+    <tbody>
+      <tr class="bg-info">
+        <th scope="col" >Id</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Email</th>
+        <th scope="col">Adhar</th>
+        <th scope="col">PanCard</th>
+        <th scope="col">Mobile</th>
+         <th scope="col">Cibil Status</th>
+        <th scope="col">Document Status</th> 
+  
+        <!-- <th scope="col">Update</th>  -->
+        <th scope="col">Delete</th> 
+      </tr>
+    </tbody>
+    <tbody>
+      <tr *ngFor="let application of applications">
+          <td>{{application.customerId}}</td>
+          <td>{{application.firstName}}</td>
+          <td>{{application.lastName}}</td>
+          <td>{{application.email}}</td>
+          <td>{{application.adharCardNumber}}</td>
+          <td>{{application.panNumber}}</td>
+          <td>{{application.mobileNumber}}</td>
+          
+          <td>{{application.loanStatus}}</td>
+          <td>{{application.documentStatus}}</td>
+          
+          <td>
+            <button type="button" class="btn btn-warning" (click)="delete(application.customerId)">Delete</button>
+         </td>
+          
+        
+      </tr>
+      
+    </tbody>
+  </table>

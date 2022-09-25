@@ -1,0 +1,43 @@
+<!-- <div class="container-fluid" >
+    <div class="row">
+        <div class="col-2" >
+            <div class="sidebar" >
+                <ul>
+                   
+                     
+                    
+                     <li><a routerLink="/creditmanager/sanctionletter" class="btn btn-secondary">Sanction Letter</a></li>
+                     <hr>
+                     <li><a routerLink="/creditmanager/sanctionlist" class="btn btn-secondary">Sanction List</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-10">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <div class="sidebar">
+                <ul>
+                  
+                    <li><a routerLink="/creditmanager/sanctionlist" class="btn btn-secondary">Sanction List</a></li>
+                    <hr>
+                    <li><a routerLink="/creditmanager/sanctionletter" class="btn btn-secondary">Sanction Letter</a></li>
+                    <hr>
+                    <li><a routerLink="/creditmanager/mail-send" class="btn btn-secondary">Mail Send</a></li>
+              
+                
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="col-10">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
